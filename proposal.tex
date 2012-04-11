@@ -1,0 +1,208 @@
+% Term paper proposal template - Ilona Sparks
+% CSC 300: Professional Responsibilities
+% Dr. Clark Turner
+
+% Two Column Format
+\documentclass[11pt]{article}
+%this allows us to specify sections to be single or multi column so that things
+% like title page and table of contents are single column
+\usepackage{multicol}
+
+\usepackage{setspace}
+\usepackage{url}
+ 
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{letterpaper}
+
+
+\begin{document}
+
+\title{\vfill Installing Software Through Scareware} %\vfill gives us the black space at the top of the page
+\author{
+By Tyler Holland \vspace{10pt} \\
+CSC 300: Professional Responsibilities  \vspace{10pt} \\
+Section 01-02 \vspace{10pt} \\
+Dr. Clark Turner \vspace{10pt} \\
+}
+\date {\today} %Or use \Today for today's Date
+
+\maketitle
+
+\vfill  %in combination with \newpage this forces the abstract to the bottom of the page
+\begin{abstract}
+Scareware is software that the user is "scared" into installing through misleading advertisements. In 2009 over 40 million people fell victim to scareware, resulting in un-needed software being installed on their computers \cite{bbcmillionstricked}. Scareware can be malicious and steal credit card information, or it can be software that doesn't do what it is advertised to do. This has become increasingly relevant on the Android OS, where ads are appearing that alert the user that "they need to upgrade their device's battery", but the software the user installs after following the ad does not actually help the battery \cite{pcworldandroid}. While these advertisements may seem purely malicious, scareware vendor Marc D'Souza was able to create a profitable business model on this fake software \cite{pcworld8.2million}. D'Souza sold 1 million copies of his 40 dollar software through scareware advertising, deceiving users into thinking their computer was infected with a virus that D'Souza's software could fix \cite{pcworld8.2million}. Although it may be a profitable business for some, the "Software Engineering Code of Ethics" suggests scareware advertising is unethical because the advertiser is acting only in their best interest and does not think of the user at all \cite{secode}.
+\end{abstract}
+
+\thispagestyle{empty} %remove page number from title page, but still keep it as pg #1
+\newpage
+
+%Create a table of contents with all headings of level 3 and above.
+%http://en.wikibooks.org/wiki/LaTeX/Document_Structure#Table_of_contents has
+%info on customizing the table of contents
+\thispagestyle{empty}  %Remove page number from TOC
+\tableofcontents
+
+\newpage
+
+%end the 1 column format
+
+
+%start 2 column format
+\begin{multicols}{2}
+%Start numbering first page of content as page 1
+\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%
+%%% Known Facts  %%%
+%%%%%%%%%%%%%%%%%%%%
+\section{Facts}
+In 2008 Marc and Maurice D'Souza began selling software through scareware under the company names Innovative Marketing and ByteHosting Internet Services \cite{pcworld8.2million}. They sold over 1 million software products for \$39.95, under names such as WinFixer, Drive Cleaner and Antivirus XP \cite{pcworld8.2million}. Users were sold the software under the premise that "scans had detected viruses, spyware and illegal pornography" on their computers \cite{pcworld8.2million}. In 2011, the FTC fined the D'Souza's for \$8.2 million dollars for multiple violations, including "unfair or deceptive marketing" and "mispresentations in connection with computer security software" \cite{ftcorder}. \\
+\vspace{10pt} \\
+WinFixer has no license agreement or prompts during installation \cite{badwarewinfixer}. It also claims to have found "Severe System Threats" on the user's computer, and launches automatically every time the user's computer is rebooted \cite{badwarewinfixer}. \\
+\vspace{10pt} \\
+A study at North Carolina State University led by David Sharek and Cameron Swofford "shows that most internet users are unable to distinguish genuine popup warnings messages from false ones" \cite{ncsupaper}. "The study examined the responses of undergraduate students to real and fake warning messages while they did a series of search tasks on a personal computer connected to the Internet" \cite{ncsupaper}. The creators of the study pointed out that "The physical differences between the real and the fake messages were subtle, and most participants did not discern them" \cite{ncsupaper}. The results showed that 63\% of users would click the OK box, even when knowing that the popup could be fake \cite{ncsupaper}. "Safer options, such as simply closing the message box, were infrequently chosen." \cite{ncsupaper}.
+\vspace{10pt} \\
+In-app ads for both the iOS and Android smartphone operating systems have had links to malicious scareware apps that would install malware \cite{pcworldandroid}. In 2011, malware specifically targeting Android increased 76\% from the previous quarter \cite{pcworldandroid}. Malicious software is not the only result of scareware on Android. Android developers can pay ad brokers such as "Green Fin Media" \$1 to \$3 per install of their app, so the advertiser's goal becomes "to get you to install that app by any means possible" \cite{pcworldandroid}. \\
+\vspace{10pt} \\
+Scareware has been advertised in many other ways as well. In 2008 advertisers would cold call people pretending to be from "supportonclick.com", and "frighten people into buying software that has little or no value or utility" \cite{registercoldtactics}. The callers would claim there was something wrong with the user's computer, and attempt to sell software that would solve the fake problem \cite{registercoldtactics}. Scareware advertisers have also used pop-ups on personal computers claiming that the computer is "damaged and corrupted", and then persuades the users to buy the scareware to fix the non-existant issue \cite{registercoldtactics}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Research Question %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Question}
+Is it ethical to use "scareware" advertising to get users to install software, such as WinFixer?\cite{pcworld8.2million}\cite{pcworldandroid}
+This question is relevant to future software platforms. As Android has risen in popularity, scareware that targets that platform has begun to emerge\cite{pcworldandroid}. There are many ads that will pressure you into downloading software that will "improve your battery life", when in reality they will either install malware or do nothing at all \cite{pcworldandroid}. The answer to this question will assist future software developers in deciding how to or how not to advertise their software.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Extant Arguments from External Sources %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Extant arguments}
+\subsection{Arguments that scareware software installation is ethical}
+\subsubsection{FAKEAV and similarity to SEO}
+FAKEAV is a piece of scareware that has been very persistant. Roland Dela Paz, Threat Response Engineer at Trend Micro calls FAKEAV a "good example of a social engineering 'success story'" \cite{malwareblogfakeav}. He explains, "by leveraging human weakness, FAKEAV effectively utilizes social engineering techniques" similar to SEO to "trick users" \cite{malwareblogfakeav}.
+\subsubsection{Lack of internet security training}
+Bill Mullins, Tech Thoughts blogger also takes a pro scareware stance. "If you get a malware infection; it's virtually certain it's your fault" \cite{billmullins}. Mullins believes that with proper internet security training, scareware wouldn't be an issue. "If users followed advice posted here, and advice from other security pros, and high level users, the Internet could be a vastly different experience for many" \cite{billmullins}.
+\subsubsection{Users are easily tricked}
+North Carolina State University conducted a study to see "what visual design cues, if any, would alert people to the illegitimacy of fake popup warning windows while browsing the internet" \cite{ncsupaper}. The result of the test (63\% of users clicking OK even when the popup window could be fake) prompted discussion at NCSU \cite{ncsupaper}. Study co-author Dr. Michael S. Wogalter says, "I don't know if you could develop a legitimate message that could not be duplicated and used illegitimately" \cite{ncsupaper}. He goes on to warn users to "be suspicious when things pop up" and to not "click ok, close the box instead" \cite{ncsupaper}. Wolter also says "The ways people responded could potentially open them up to malevolent software, such as spyware or a computer virus" \cite{ncsupaper}.
+\subsection{Arguments that scareware software installation is unethical}
+\subsubsection{Paying for software they don't need}
+Both Microsoft and Washington State's Attorney General are strongly against scareware. In 2008, they filed lawsuits against a large number of known scareware "scam artists" \cite{bbcfighting}. Attorney General Rob McKenna describes scareware to be a "blatant rip-off of consumers", and that users are "duped into downloading a fake scan and then duped into paying for software they don't need" \cite{bbcfighting}. He continues by saying that they "won't tolerate the use of alarmist warnings or deceptive 'free scans' to trick consumers into buying software to fix a problem that doesn't even exist" \cite{bbcfighting}. McKenna has had success in lawsuits against "internet companies that prey on consumers' anxieties", and is confident in having this lawsuit go through.\cite{bbcfighting}
+\subsubsection{FTC Case}
+The Federal Trade Commission has brought a "temporary halt" to a large scareware scheme \cite{ftccourtcase}. The scareware that the FTC is focused on is one that "falsely claimed that scans had detected viruses, spyware, and illegal pornography on consumers' computers" \cite{ftccourtcase}. This version of scareware has been installed by over one million users, costing each user \$39.95 \cite{pcworld8.2million}. The FTC also noted that the scareware "used an elaborate ruse that duped Internet advertising networks and popular web sites into carrying their advertisements" \cite{ftccourtcase}. With this court case, the FTC is aiming to "permanently bar the defendants from engaging in 'scareware' marketing", and "provide monetary redress" to the users it has affected \cite{ftccourtcase}.
+\subsection{Summary:}
+The pro-scareware side thinks of scareware as just another social engineering technique. Scareware is compared to SEO in the way it "tricks users"\cite{malwareblogfakeav}. The anti-scareware side sees scareware as false advertising and a "blatant rip-off of consumers" \cite{bbcfighting}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Analytic principles %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Application of Software Engineering Code}
+In the dictionary, a software engineer is "a person who designs and writes and tests computer programs" \cite{dictionary}.  Scareware and the software it is advertising are both computer programs, so the definition fits \cite{bbcmillionstricked}. The SE Code does apply to this ethical question, as the designers and developers of the scareware are then software engineers by definition, because they are creating computer programs \cite{secode}\cite{bbcmillionstricked}. There are also a few sections of the SE Code that directly apply to the ethics regarding this question. 
+\vspace{10pt} \\
+Section 1.02 "moderate the interests of the software engineer, the employer, the client and the users with the public good" \cite{secode}. It is important to determine if the creation and distribution of scareware is working in the interests of the public good. 
+\vspace{10pt} \\
+Section 3.08 ensure the software is well documented and "satisfy the users' requirements" \cite{secode}. Does scareware satisfy any of the users' requirements or expectations?
+\vspace{10pt} \\
+Section 4.04 "not engage in deceptive financial practices" \cite{secode}. Is the way scareware is advertised, by definition, a deceptive financial practice?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Abstract your Expected Analysis %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analysis}
+The Association of Computing Machinery (ACM) has created a code of ethics for software engineers. It details the ethical responsibilites of software engineers working in the field. As described earlier in this document, the scareware makers and the corresponding software developers are by definition software engineers. In the next few sections, I will use the SE Code of Ethics to determine if "WinFixer" was installed on user's devices ethically.
+\subsection{SE Code 1.02: Moderating Interests}
+SE Code section 1.02 states that software engineers should "Moderate the interests of the software engineer, the employer, the client, and the users with the public good"\cite{secode}. "Moderate", as defined by the dictionary, means "to reduce the excessiveness of; make less violent, severe, intense, or rigorous" \cite{dictionary}. This definition means that SE Code section 1.02 is instructing software engineers to make sure the none of the interests of any one of these groups become excessive when compared to the other groups. "Interest", as defined by the dictionary, means "concern; importance" \cite{dictionary}. To simplify even further, this definition means that software engineers should make sure all groups affected by the software in question should have their concerns and important matters balanced to a fair level. In the next few sections, I will define what each groups' interests are.
+\subsubsection{Interests of the Software Engineer}
+The Software Engineering Code of Ethics states that software engineers should "act consistently with the public interest" and "act in a manner that is in the best interests of their client and employer consistent with the public interest"\cite{secode}. As defined above, the "interest" of these groups is anything that concerns or is important to them. The SE Code also states that "software engineers shall act in a manner that is in the best interests of their client and employer, consistent with the public interest" \cite{secode}. The interest of the software engineer is based on balancing the interests of all of the other groups mentioned in SE Code section 1.02. If all of the other groups interests are fulfilled, the software engineer's will be too, because they will be acting ethically. For this analysis, I will not directly involve the interests of the software engineer in my calculation, as it is fulfilled only if the other groups interests are balanced.
+\subsubsection{Interests of the Employer}
+In this example, the employer for the piece of software "WinFixer" is Marc D'Souza\cite{pcworld8.2million}. An employer, as defined by the dictionary, is "a person or business that employs one or more people, especially for wages or salary" \cite{dictionary}. The main concern of the employer is to be able to employ one or more people, by definition. The optimal team size for developing software is 5, as shown by research\cite{teamsize}. Additionally, the average salary of a software engineer is between 40,000 and 100,000 dollars a year, according to PayScale\cite{sesalary}. In order for Mr. D'Souza to fulfill his interests as an employer and hire a team of 5 software engineers, plus his own salary, the software he sells needs to bring in at least \$600,000 a year\cite{sesalary}.
+\vspace{10pt}\\
+The sales of "WinFixer" is over 1/3 of a million units sold at \$39.95 each \cite{pcworld8.2million}. This comes out to over \$13 million dollars from selling the software. 13 million is much greater than the needed 600,000 to pay salaries for himself and his team. As an employer, the sale of this software fulfills Mr. D'Souza's interests.
+\subsubsection{Interests of the Client}
+The clients in this example are the scareware advertisers. An example of a scareware advertisement is a pop-up on a user's computer that says "CRITICAL ERROR MESSAGE! - REGISTRY DAMAGED AND CORRUPTED"\cite{bbcfighting}. Messages like these "scare" users into downloading the software it is advertising. As defined in the dictionary, to advertise is "to offer goods for sale or rent, solicit funds, etc., by means of advertisements"\cite{dictionary}. By definition, the interest of the client in this case is to offer their goods ("WinFixer") for sale.\\
+\vspace{10pt}\\
+As stated in the previous section on the interests of the employer, "WinFixer" sold over 1/3 million units combined \cite{pcworld8.2million}. The scareware advertisers were able to sell their goods, which fulfills their interests.
+\subsubsection{Interests of the Users}
+The users are the ones receiving the client's advertisements. It is in the interest of the user to have a working piece of software that acts as advertised \cite{bbcmillionstricked}. In this example, the software was advertised as a registry error scanner that would solve the problems the scareware showed\cite{bbcfighting}.\\
+\vspace{10pt}\\
+"WinFixer" was a "fake scan" as reported by the BBC \cite{bbcfighting}. The installed program was "software that corrects the non-existent issue by offering fake security fixes" \cite{bbcfighting}. To the users, the software they installed did not act as advertised. They expected to purchase a registry scanner to solve the problem the scareware was reporting, but in reality the software did not do any registry scanning\cite{bbcfighting}. The interests of the users were not fulfilled in this case.
+\subsubsection{Interests of the Public Good}
+For the public good, I will be using the ethical system of act utilitarianism. Act Utilitarianism states that "it is the value of the consequences of the particular act that counts when determining whether the act is right"\cite{actutil}. The "value" that is mentioned is calculated by utilitarian principles. Utilitarianism is defined as "the ethical doctrine that virtue is based on utility,  and that conduct should be directed toward promoting the greatest happiness of the greatest number of persons"\cite{dictionary}. In order for the interests of the public good to be served, the act of selling the scareware must provide the most happiness to the most number of people.\\
+\vspace{10pt}\\
+Based on the above sections dealing with the employer, client, and users, I will do a simple calculation of utility to determine if the public good's interests were fulfilled. \\
+\vspace{10pt} \\
+\begin{tabular}{l l l}
+Group & Interests Fulfilled? & Utility \\ \hline
+Employer & Yes & +1 \\
+Client & Yes & +3 \\
+Users & No & -333,000 \\ \hline
+\multicolumn{2}{l}{Net Utility:} & -332,996
+\end{tabular}
+\item Overall: Far greater negative utility than positive, this action is not ethical based on act utilitarianism. The public good's interests were not fulfilled.
+\subsubsection{Conclusion}
+In order for the installation of "WinFixer" to be ethical, the interests of the above groups must be balanced and fair as a result of moderation by the software engineer. As seen by the above calculation, the interests of the two largest groups, the users and the public good, were not fulfilled.\\
+\vspace{10pt}\\
+Based on Section 1.02 of the SE Code, using scareware advertising to install this software is \textbf{unethical}.
+
+\subsection{SE Code 3.08: Satisfying Requirements}
+SE Code section 3.08 states that software engineers should "Ensure that specifications for software on which they work have been well documented, satisfy the users’ requirements and have the appropriate approvals." \cite{secode}. In order to determine if it is ethical to use scareware to install software on users' computers, I will use the example of Marc D'Souza's WinFixer program. In the following subsections, I will substitute parts of SE Code section 3.08 with relevant details about WinFixer. There are 3 parts to substitute that are referencing the software's specifications: "well documented", "satisfy the users' requirements", and "have the appropriate approvals".
+\subsubsection{Well Documented Specifications}
+According to the dictionary, "documented" is defined as "to furnish with references, citations, etc., in support of statements made" \cite{dictionary}. Additionally, "well" is defined as "in a good or satisfactory manner" \cite{dictionary}. "Specifications" is referencing the requirements document described in SE Code. Combining these definitions I will replace "have been well documented" in the SE Code with "have been satisfactorily referenced and cited".
+
+\subsubsection{Satisfy the Users' Requirements}
+As described earlier in the SE Code section 1.02 analysis, the "users' requirements" are having a working piece of software that works as advertised \cite{bbcmillionstricked}. WinFixer is advertised as:
+\begin{quotation} "The ultimate solution that safeguards your system by cleaning the Windows registry, fixing damaged files, running disk cleanup and detecting hard drive errors. Winfixer protects your system against potential damages and problems, ensuring its optimal performance"  \cite{badwarewinfixer}.
+\end{quotation}
+For this part of the SE Code substitution, "satisfy the users' requirements" will be replaced with "satisfy the need for cleaning the Windows registry, fixing damaged files, running disk cleanup and detecting hard drive errors", as that is what the user requires from WinFixer as it is currently advertised.
+
+\subsubsection{Have the Appropriate Approvals}
+"Appropriate" is defined in the dictionary as "suitable or fitting for a particular purpose" \cite{dictionary}. "Approval" is defined in the dictionary as "formal permission or sanction" \cite{dictionary}. Using these definitions, I will substitute "have the appropriate approvals" in the SE Code with "have the suitable formal permissions".
+
+\subsubsection{Analysis and Conclusion}
+Combining these three substitutions together, the SE Code section 3.08 becomes:
+\begin{quotation}
+ "Ensure that specifications for software on which the work have been satisfactorily referenced and cited, satisfy the need for cleaning the Windows registry, fixing damaged files, running disk cleanup and detecting hard drive errors, and have the suitable formal permissions".
+\end{quotation}
+In order to determine if WinFixer's specifications were satisfactorily referenced and cited, the requirements document must be inspected. After 10 internet search engine queries on WinFixer's requirements, there were no results that yielded an actual requirements document. However, one search result was a webpage dedicated to listing all known information about WinFixer \cite{badwarewinfixer}. According to this webpage, WinFixer has not published any information about itself \cite{badwarewinfixer}.  This means that WinFixer published no public formal requirements document, which makes it impossible for the users to see. Due to the complete lack of a formal requirements document, WinFixer does not fulfill this section of the SE Code.
+
+\subsection{SE Code 4.04: Deceptive Practices}
+SE Code section 4.04 states that software engineers should "Not engage in deceptive financial practices such as bribery, double billing, or other improper financial practices" \cite{secode}. In order for WinFixer to have been involved in "deceptive financial practices", it needs to have engaged in "financial practices" in the first place. As described earlier in this paper, WinFixer sold over 333,000 units at \$39.95 each \cite{pcworld8.2million}. Financial is defined as "pertaining to monetary receipts and expenditures", so because WinFixer received money for its software, it is dealing with financial practices \cite{dictionary}. In order to determine if WinFixer violated this section of the SE Code or not, I will examine each of the described financial practices to see if WinFixer violated one or more of them.
+\subsubsection{Bribery}
+A "bribe" is defined as "anything given or serving to persuade or induce" \cite{dictionary}. WinFixer was sold using "scareware" advertising techniques \cite{bbcmillionstricked}. To sell the software, the scareware advertisers tricked computer users "into clicking on pop-up alerts that claim their device is 'damaged and corrupted'", even when there is no such problem on the user's machine \cite{bbcfighting}. WinFixer went even further with its persuasion, and alerted the user that it had detected hundreds of "Severe System Threats on your computer" and if the user did not install WinFixer, more problems would occur if not fixed immediately \cite{symantecwinfixer}\cite{mcafeewinfixer}. These problems included "lost documents and profile settings, physical data loss, system not starting up, and system slowdowns, crashes, and freezes" \cite{symantecwinfixer}\cite{mcafeewinfixer}. All of these messages are used in an attempt to persuade the user into buying the scareware, which in this case is WinFixer. The user is being persuaded into purchasing the software, because of a perceived problem on their computer that the scareware software can solve \cite{bbcmillionstricked} \cite{bbcfighting}.  This proves WinFixer guilty for using bribery, and failing this part of this SE Code section. It is worth continuing on to the other sections in order to gain a better grasp of the other deceptive financial practices, if any, that WinFixer is guilty of.
+\subsubsection{Double Billing}
+Double Billing is defined as "to bill different accounts for the same charge" \cite{dictionary}. From all of the users that bought WinFixer, double billing has not been a complaint \cite{bbcfighting} \cite{ftcorder}. What WinFixer does with the user's credit card information after the software is purchased is close to being considered double billing, but will be covered in the next subsection for a more detailed analysis.
+\subsubsection{Other Improper Financial Practices}
+This section will describe additional issues with WinFixer's financial practices that do not fit in to the categories of "bribery" or "double billing". \\
+\vspace{10pt}\\
+Right from the start of the scareware advertising, there are deceptive practices being used to trick the user into buying WinFixer \cite{bbcfighting}. The BBC reports that users were "duped into downloading a fake scan (of the computer) and then duped into paying for software they don't need" \cite{bbcfighting}. As described above, the users were "bribed" into paying for and installing the software because of what the user perceived as "threats to their computer" \cite{symantecwinfixer}\cite{mcafeewinfixer}. The BBC goes on further to describe the selling of WinFixer as a "scare and scam" that is "all about getting money out of the user" \cite{bbcfighting}.\\
+\vspace{10pt}\\
+A study from North Carolina State University showed that "most internet users are unable to tell the difference between genuine and fake pop-up messages", such as those used in scareware \cite{bbcfighting}. Given a pop-up window, 63\% of users would hit the OK button even knowing that there was a chance that the window was fake \cite{bbcfighting}. WinFixer's scareware advertisers used this to their advantage in another deceptive financial practice. Once the user started to install WinFixer, there would be no further pop-ups or prompts during installation \cite{badwarewinfixer}. This means that the user was never shown the license agreement, and was also never given an opportunity to stop the installation once it had started \cite{badwarewinfixer}. Not being shown the license agreement is classified as a deceptive financial practice, because the user is not aware of how they are or are not allowed to use and share the software \cite{badwarewinfixer}.\\
+\vspace{10pt}\\
+The FTC has also identified a number of deceptive financial practices that Marc D'Souza undertook while selling WinFixer. This includes:
+\begin{itemize}
+\item "Installing advertising Software on consumers' computers in a deceptive or unfair manner" \cite{ftcorder}
+\item "Misrepresenting ... the total cost to purchase, receive, or use ... any goods or services that are subject to the sales offer"\cite{ftcorder} \ldots
+\item "Misrepresenting ... any material aspect of the nature or terms of a refund, cancellation, exchange, or repurchase policy"\cite{ftcorder}
+\end{itemize}
+\subsubsection{Examples in other Scareware}
+In addition to WinFixer, there have been over 250 other instances of software being installed through scareware \cite{bbcmillionstricked}. In 2009 alone, over 40 million people had installed software solely because of scareware advertising \cite{bbcmillionstricked}. In order to answer the larger question of "Is it ethical to use "scareware" advertising to get users to install software", it is important to observe the other examples. This section will be a brief look at some other possible problems related to scareware and deceptive financial practices. \\
+\vspace{10pt}
+Some scareware advertisements have been made to look exactly like products from large companies like Microsoft or other software providers \cite {bbcmillionstricked}. This tricks users into thinking they can trust the software they are downloading, but in reality they are downloading completely different software. Software sold through scareware has also contributed to identity theft by installing trojans and viruses\cite{bbcmillionstricked}.
+\subsubsection{Conclusion}
+The selling of WinFixer through scareware advertising has involved using bribery along with other deceptive financial practices, such as imitating other software for the purpose of tricking the user \cite{bbcfighting} \cite{ftcorder} \cite{badwarewinfixer}. This causes the selling of WinFixer to violate section 4.04 of the SE Code.
+
+
+\subsection{Conclusion:}
+Based on utilitarian principles and violations of the Software Engineering Code of Ethics, "Scareware" is not an ethical way to advertise software. Scareware benefits the advertiser, but at the cost of happiness for all of the users of the scareware. The only ones benefiting from the scareware are the advertisers and the employer, as the users are most likely tricked or scared into installing the software. Scareware advertising also violates sections 1.02, 3.08, and 4.04 of the Software Engineering Code of Ethics \cite{secode}. Scareware is not made in the interest of the public good, as it is only for the benefit of the advertiser. The user is also in most cases deceived into thinking the software will do something that it does not. Scareware is also a deceptive financial practice in some cases, such as when the software installed is actually malware and the software steals the credit card info of the user \cite{bbcmillionstricked}.
+
+%end the two column format
+\end{multicols}
+\newpage
+
+% cite all the references you want in your annotated bibliography that you cite in the paper
+\nocite{*}
+
+\bibliographystyle{IEEEannot}
+
+\bibliography{proposal}
+\end{document}
